@@ -1,0 +1,142 @@
+{
+  "project_info": {
+    "project_number": "858812055176",
+    "project_id": "jainfastfood-7b36d",
+    "storage_bucket": "jainfastfood-7b36d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858812055176:android:2015d1787b60c38c9de93d",
+        "android_client_info": {
+          "package_name": "com.ankurupadhyay.finaljffadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858812055176-9bdoaosn7oqacjfvn1mmop46hcq15qn2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuOgdF_5k-vxG0fmZcE4D5a-l_Pjd9YoY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858812055176-9bdoaosn7oqacjfvn1mmop46hcq15qn2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858812055176:android:6c9083100077f9ac9de93d",
+        "android_client_info": {
+          "package_name": "com.ankurupadhyay.finalljffuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858812055176-t8pjsqfd2m379fm4psub4dgk41i7hg5f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ankurupadhyay.finalljffuser",
+            "certificate_hash": "18c65739330c80effaad1edf5ec0ec96a2bfb899"
+          }
+        },
+        {
+          "client_id": "858812055176-9bdoaosn7oqacjfvn1mmop46hcq15qn2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuOgdF_5k-vxG0fmZcE4D5a-l_Pjd9YoY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858812055176-9bdoaosn7oqacjfvn1mmop46hcq15qn2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858812055176:android:2d9d4fa3a0cca5bb9de93d",
+        "android_client_info": {
+          "package_name": "com.example.jffadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858812055176-o3j4bj03qleui471k3g7gbehdgp46r9a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jffadmin",
+            "certificate_hash": "18c65739330c80effaad1edf5ec0ec96a2bfb899"
+          }
+        },
+        {
+          "client_id": "858812055176-9bdoaosn7oqacjfvn1mmop46hcq15qn2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuOgdF_5k-vxG0fmZcE4D5a-l_Pjd9YoY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858812055176-9bdoaosn7oqacjfvn1mmop46hcq15qn2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858812055176:android:fe1b5acd6ce651fd9de93d",
+        "android_client_info": {
+          "package_name": "com.example.newjainfastfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858812055176-9bdoaosn7oqacjfvn1mmop46hcq15qn2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuOgdF_5k-vxG0fmZcE4D5a-l_Pjd9YoY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858812055176-9bdoaosn7oqacjfvn1mmop46hcq15qn2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

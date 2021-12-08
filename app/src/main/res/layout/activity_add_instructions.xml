@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="5dp">
+
+        <include layout="@layout/toolbar_title" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16.7dp"
+            android:layout_marginEnd="16.7dp"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:paddingBottom="23.3dp">
+
+
+
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:includeFontPadding="false"
+                android:text="Customer Comment"
+                android:textColor="@color/silver_909397"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_silver_border"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:hint="Enter customer instructions"
+                android:includeFontPadding="false"
+
+                android:padding="15dp"
+                android:textColor="@color/title_color_22282f"
+                android:textColorHint="@color/silver_909397"
+                android:textSize="15sp"/>
+
+
+
+
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:includeFontPadding="false"
+                android:text="Description"
+                android:textColor="@color/silver_909397"
+                android:textSize="14sp" />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_silver_border"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:hint="Enter Description"
+                android:includeFontPadding="false"
+                android:inputType="textCapWords"
+
+                android:padding="15dp"
+                android:textColor="@color/title_color_22282f"
+                android:textColorHint="@color/silver_909397"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+    <ProgressBar
+        android:indeterminateTint="@color/white"
+        android:id="@+id/progress"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33.3dp"
+        android:layout_marginStart="16.7dp"
+        android:layout_marginEnd="16.7dp"
+        android:background="@drawable/rectangle_multi_gradient"
+        android:fontFamily="@font/sf_pro_display_medium"
+        android:includeFontPadding="false"
+        android:text="Create"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33.3dp"
+        android:layout_marginStart="16.7dp"
+        android:layout_marginEnd="16.7dp"
+        android:background="@drawable/rectangle_multi_gradient"
+        android:fontFamily="@font/sf_pro_display_medium"
+        android:includeFontPadding="false"
+        android:text="Submit"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+</RelativeLayout>

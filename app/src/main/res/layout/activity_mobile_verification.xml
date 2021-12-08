@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jffbg"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:paddingBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="-120dp"
+            android:layout_height="220dp"
+
+            />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/tlogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12.7dp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:text="TASTE YOU CAN'T FORGET"
+            android:textColor="@color/light_white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25.8dp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:text="LOGIN WITH"
+            android:textColor="@color/light_white"
+            android:textSize="15sp" />
+
+
+
+        <LinearLayout
+            android:id="@+id/li_mobile"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="38.7dp"
+                android:layout_marginRight="16.7dp"
+                android:textColorHint="@color/white_opecity"
+                app:hintTextAppearance="@style/BlueTextInputLayout">
+
+                <EditText
+                    android:id="@+id/mobile_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:hint="Mobile Number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="5.7dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.9dp"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginRight="16.7dp"
+                android:background="@color/viewLine" />
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progressbar"
+                android:indeterminateTint="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/error"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="this is error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="38.6dp"
+                android:layout_marginRight="16.7dp"
+                android:background="@drawable/rectangle_white"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="Login"
+                android:textColor="@color/red"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/li_otp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="38.7dp"
+                android:layout_marginRight="16.7dp"
+                android:textColorHint="@color/white_opecity"
+                app:hintTextAppearance="@style/BlueTextInputLayout">
+
+                <EditText
+                    android:id="@+id/otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:hint="Enter Otp"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="5.7dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.9dp"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginRight="16.7dp"
+                android:background="@color/viewLine" />
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progressbar2"
+                android:indeterminateTint="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/error2"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="this is error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/submit_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="38.6dp"
+                android:layout_marginRight="16.7dp"
+                android:background="@drawable/rectangle_white"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="Submit Otp"
+                android:textColor="@color/red"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

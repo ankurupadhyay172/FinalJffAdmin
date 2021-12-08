@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+
+    <tab
+        id="@+id/tab_mytask"
+        icon="@drawable/ic_page_1"
+        title="My Task"
+        activeColor="#ffffff"
+        inActiveColor="#8e8e93"/>
+
+    <tab
+        id="@+id/tab_smsblack"
+        icon="@drawable/ic_grid"
+        title="Users"
+        activeColor="#ffffff"
+        inActiveColor="#8e8e93"/>
+
+    <tab
+        id="@+id/tab_add" />
+
+
+    <tab
+        id="@+id/tab_floating"
+        icon="@drawable/ic_fill_3"
+        title="Analysis"
+        activeColor="#ffffff"
+        inActiveColor="#8e8e93"/>
+
+    <tab
+        id="@+id/tab_bell"
+        icon="@drawable/ic_user"
+        title="Profile"
+        activeColor="#ffffff"
+        inActiveColor="#8e8e93"/>
+
+</tabs>

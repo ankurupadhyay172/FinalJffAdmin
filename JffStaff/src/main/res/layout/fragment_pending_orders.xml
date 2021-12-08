@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_fafafa"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/li_empty"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="11dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Cart"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="160dp"
+            android:src="@drawable/ic_empty_cart" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="22.5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="No Orders"
+            android:textColor="@color/txt_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Add Your Favourite Items From Home"
+            android:textColor="@color/txt_color"
+            android:textAlignment="center"
+            android:lineSpacingExtra="5dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/shopping_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="96dp"
+            android:layout_marginRight="96dp"
+            android:layout_marginTop="21.5dp"
+            android:fontFamily="@font/sf_pro_display_semibold"
+            android:text="Start_shopping"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvCancel"
+        android:paddingTop="16.7dp"
+        android:overScrollMode="never"
+        android:clipToPadding="false"/>
+</LinearLayout>

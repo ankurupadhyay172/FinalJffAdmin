@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragments.SaveOrdersFragment">
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:paddingBottom="50dp"
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16.7dp"
+                android:layout_marginTop="23.3dp"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:includeFontPadding="false"
+                android:text="Instructions"
+                android:textColor="@color/black_25303c"
+                android:textSize="16.7sp" />
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/edt_note1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:hint="Write User Instructions"
+                    android:textColor="@color/grey_828990"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/img_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:rotation="270"
+                    android:scaleY="-1"
+                    android:src="@drawable/ic_pencil"
+                    app:tint="@color/black_25303c" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15.8dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/smoke_gray" />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16.7dp"
+                android:layout_marginTop="23.3dp"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:includeFontPadding="false"
+                android:text="Table No."
+                android:textColor="@color/black_25303c"
+                android:textSize="16.7sp" />
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/edt_table_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:hint="Write Table No"
+                    android:textColor="@color/grey_828990"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/img_table_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:rotation="270"
+                    android:scaleY="-1"
+                    android:src="@drawable/ic_pencil"
+                    app:tint="@color/black_25303c" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15.8dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/smoke_gray" />
+
+
+
+
+
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_alignBottom="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16.2dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:backgroundTint="@color/jffbg"
+                    android:id="@+id/li_delivery"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_gray_boxprofile"
+                    android:orientation="horizontal"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="18dp"
+                    android:paddingRight="13dp"
+                    android:layout_marginRight="7.5dp"
+                    android:paddingBottom="18dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/sf_pro_display_semibold"
+                        android:text="AC HALL"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/img_delivery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/circle_radio" />
+                </LinearLayout>
+                <LinearLayout
+                    android:backgroundTint="@color/jffbg"
+                    android:id="@+id/li_takeaway"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_gray_boxprofile"
+                    android:orientation="horizontal"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="18dp"
+                    android:paddingRight="13dp"
+                    android:layout_marginLeft="7.5dp"
+                    android:paddingBottom="18dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/sf_pro_display_semibold"
+                        android:text="NON AC"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/img_takeaway"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/circle_radio" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/checkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="16dp"
+
+        android:background="@drawable/rectangle_green"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:text="Complete Order"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

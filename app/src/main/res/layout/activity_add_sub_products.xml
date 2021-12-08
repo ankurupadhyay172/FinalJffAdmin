@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_sort_filter" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:clipToPadding="false">
+
+            <FrameLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/slogo" />
+
+                <ImageView
+                    android:id="@+id/add_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:src="@drawable/ic_add" />
+            </FrameLayout>
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7sp"
+                android:layout_marginTop="23.3dp"
+                android:fontFamily="@font/robo_regular"
+                android:gravity="center"
+                android:text="Category"
+                android:textColor="@color/txt_color"
+                android:textSize="13.3sp" />
+
+            <EditText
+                android:focusable="false"
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="6.7dp"
+                android:layout_marginRight="16.7sp"
+                android:background="@drawable/rect_gray_border"
+                android:fontFamily="@font/robo_regular"
+                android:hint=""
+                android:inputType="textCapWords"
+                android:paddingLeft="15dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/txt_color"
+                android:textColorHint="@color/txt_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7sp"
+                android:layout_marginTop="23.3dp"
+                android:fontFamily="@font/robo_regular"
+                android:gravity="center"
+                android:text="Order "
+                android:textColor="@color/txt_color"
+                android:textSize="13.3sp" />
+
+            <EditText
+                android:digits="0123456789"
+                android:id="@+id/order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="6.7dp"
+                android:layout_marginRight="16.7sp"
+                android:background="@drawable/rect_gray_border"
+                android:fontFamily="@font/robo_regular"
+                android:hint=""
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/txt_color"
+                android:textColorHint="@color/txt_color"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7sp"
+                android:layout_marginTop="23.3dp"
+                android:fontFamily="@font/robo_regular"
+                android:gravity="center"
+                android:text="Title"
+                android:textColor="@color/txt_color"
+                android:textSize="13.3sp" />
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="6.7dp"
+                android:layout_marginRight="16.7sp"
+                android:background="@drawable/rect_gray_border"
+                android:fontFamily="@font/robo_regular"
+                android:hint=""
+                android:inputType="textCapWords"
+                android:paddingLeft="15dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/txt_color"
+                android:textColorHint="@color/txt_color"
+                android:textSize="15sp" />
+
+
+
+
+
+
+
+
+<!--            size title-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7sp"
+                android:layout_marginTop="23.3dp"
+                android:fontFamily="@font/robo_regular"
+                android:gravity="center"
+                android:text="Size title"
+                android:textColor="@color/txt_color"
+                android:textSize="13.3sp" />
+
+            <EditText
+
+                android:id="@+id/size_title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="6.7dp"
+                android:layout_marginRight="16.7sp"
+                android:background="@drawable/rect_gray_border"
+                android:fontFamily="@font/robo_regular"
+                android:hint="Enter 1st size name"
+                android:inputType="textCapCharacters"
+                android:paddingLeft="15dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/txt_color"
+                android:textColorHint="@color/txt_color"
+                android:textSize="15sp" />
+
+
+
+            <EditText
+                android:id="@+id/size_title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="6.7dp"
+                android:layout_marginRight="16.7sp"
+                android:background="@drawable/rect_gray_border"
+                android:fontFamily="@font/robo_regular"
+                android:hint="Enter 2nd size name"
+                android:inputType="textCapCharacters"
+                android:paddingLeft="15dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/txt_color"
+                android:textColorHint="@color/txt_color"
+                android:textSize="15sp" />
+
+
+            <EditText
+                android:id="@+id/size_title3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="6.7dp"
+                android:layout_marginRight="16.7sp"
+                android:background="@drawable/rect_gray_border"
+                android:fontFamily="@font/robo_regular"
+                android:hint="Enter 3rd size name"
+                android:inputType="textCapCharacters"
+                android:paddingLeft="15dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/txt_color"
+                android:textColorHint="@color/txt_color"
+                android:textSize="15sp" />
+
+
+
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7sp"
+                android:layout_marginTop="23.3dp"
+                android:fontFamily="@font/robo_regular"
+                android:gravity="center"
+                android:text="Size Description"
+                android:textColor="@color/txt_color"
+                android:textSize="13.3sp" />
+
+            <EditText
+                android:id="@+id/size_desc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="6.7dp"
+                android:layout_marginRight="16.7sp"
+                android:background="@drawable/rect_gray_border"
+                android:fontFamily="@font/robo_regular"
+                android:hint="Enter 1st size description"
+                android:inputType="textCapWords"
+                android:paddingLeft="15dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/txt_color"
+                android:textColorHint="@color/txt_color"
+                android:textSize="15sp" />
+
+
+
+            <EditText
+                android:id="@+id/size_desc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="6.7dp"
+                android:layout_marginRight="16.7sp"
+                android:background="@drawable/rect_gray_border"
+                android:fontFamily="@font/robo_regular"
+                android:hint="Enter 2nd size description"
+                android:inputType="textCapWords"
+                android:paddingLeft="15dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/txt_color"
+                android:textColorHint="@color/txt_color"
+                android:textSize="15sp" />
+
+
+            <EditText
+                android:id="@+id/size_desc3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="6.7dp"
+                android:layout_marginRight="16.7sp"
+                android:background="@drawable/rect_gray_border"
+                android:fontFamily="@font/robo_regular"
+                android:hint="Enter 3rd size description"
+                android:inputType="textCapWords"
+                android:paddingLeft="15dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/txt_color"
+                android:textColorHint="@color/txt_color"
+                android:textSize="15sp" />
+
+
+
+<!--            size price-->
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7sp"
+                android:layout_marginTop="23.3dp"
+                android:fontFamily="@font/robo_regular"
+                android:gravity="center"
+                android:text="Size Price"
+                android:textColor="@color/txt_color"
+                android:textSize="13.3sp" />
+
+
+            <EditText
+
+                android:drawableLeft="@drawable/ic_rupee"
+                android:id="@+id/size_price1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="6.7dp"
+                android:layout_marginRight="16.7sp"
+                android:background="@drawable/rect_gray_border"
+                android:fontFamily="@font/robo_regular"
+                android:hint="Enter 1st size price"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/txt_color"
+                android:textColorHint="@color/txt_color"
+                android:textSize="15sp" />
+
+
+
+            <EditText
+
+                android:drawableLeft="@drawable/ic_rupee"
+                android:id="@+id/size_price2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="6.7dp"
+                android:layout_marginRight="16.7sp"
+                android:background="@drawable/rect_gray_border"
+                android:fontFamily="@font/robo_regular"
+                android:hint="Enter 2nd size price"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/txt_color"
+                android:textColorHint="@color/txt_color"
+                android:textSize="15sp" />
+
+
+            <EditText
+
+                android:drawableLeft="@drawable/ic_rupee"
+                android:id="@+id/size_price3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="6.7dp"
+                android:layout_marginRight="16.7sp"
+                android:background="@drawable/rect_gray_border"
+                android:fontFamily="@font/robo_regular"
+                android:hint="Enter 3rd size price"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/txt_color"
+                android:textColorHint="@color/txt_color"
+                android:textSize="15sp" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7sp"
+                android:layout_marginTop="23.3dp"
+                android:fontFamily="@font/robo_regular"
+                android:gravity="center"
+                android:text="Description "
+                android:textColor="@color/txt_color"
+                android:textSize="13.3sp" />
+
+            <EditText
+                android:gravity="top"
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="6.7dp"
+                android:layout_marginRight="16.7sp"
+                android:background="@drawable/rect_gray_border"
+                android:fontFamily="@font/robo_regular"
+                android:hint=""
+                android:lines="5"
+                android:inputType="textMultiLine|textCapSentences"
+                android:paddingLeft="15dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/txt_color"
+                android:textColorHint="@color/txt_color"
+                android:textSize="15sp" />
+
+
+
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7sp"
+                android:layout_marginTop="23.3dp"
+                android:fontFamily="@font/robo_regular"
+                android:gravity="center"
+                android:text="Price "
+                android:textColor="@color/txt_color"
+                android:textSize="13.3sp" />
+
+            <EditText
+                android:visibility="gone"
+                android:drawableLeft="@drawable/ic_rupee"
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="6.7dp"
+                android:layout_marginRight="16.7sp"
+                android:background="@drawable/rect_gray_border"
+                android:fontFamily="@font/robo_regular"
+                android:hint="Enter 3rd size price"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/txt_color"
+                android:textColorHint="@color/txt_color"
+                android:textSize="15sp" />
+
+
+            <CheckBox
+                android:visibility="gone"
+                android:id="@+id/free"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7sp"
+                android:layout_marginTop="23.3dp"
+                android:fontFamily="@font/robo_regular"
+                android:gravity="center"
+                android:text="Free Course"
+                android:textColor="@color/txt_color"
+                android:textSize="13.3sp" />
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

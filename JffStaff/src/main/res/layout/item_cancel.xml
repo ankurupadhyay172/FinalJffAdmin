@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="16.7dp"
+    android:layout_marginEnd="16.7dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="6.7dp"
+    android:layout_marginBottom="16.7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="horizontal">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:visibility="gone"
+            android:layout_width="63.3dp"
+            android:layout_height="63.3dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgCleaning"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="fitCenter"
+            app:riv_corner_radius="10dp"
+            app:riv_border_width="0dip"
+            app:riv_border_color="#333333"
+            app:riv_mutate_background="false"
+            app:riv_tile_mode="clamp"
+            app:riv_oval="false" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Bathroom_cleaning"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:textColor="@color/black_25303c"
+                android:includeFontPadding="false"/>
+            <TextView
+                android:id="@+id/tvDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13.3sp"
+                android:layout_marginTop="10dp"
+                android:text="Wed_24_jul_20_at_7_am"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:textColor="@color/grey_828990"
+                android:includeFontPadding="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

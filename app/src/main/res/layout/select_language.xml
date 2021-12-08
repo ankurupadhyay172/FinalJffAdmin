@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RadioGroup
+        android:id="@+id/choose_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/all"
+            android:textSize="18sp"
+            android:padding="20dp"
+            android:text="Show All"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/day"
+            android:textSize="18sp"
+            android:padding="20dp"
+            android:text="Last 2 Days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/week"
+            android:textSize="18sp"
+            android:padding="20dp"
+            android:text="Last 7 Days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/month"
+            android:textSize="18sp"
+            android:padding="20dp"
+            android:text="Last 30 Days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+</LinearLayout>

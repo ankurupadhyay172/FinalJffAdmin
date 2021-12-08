@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Order App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rupee">₹</string>
+
+    <string name="pay_using">Pay Using</string>
+    <string name="pay_online">Pay Online</string>
+    <string name="upi_net_banking_wallet">UPI, Net banking, wallet</string>
+
+
+    <string name="cash">Cash</string>
+    <string name="pay_money_to_our_delivery_boy_by_cash_nwhen_service_is_done">Pay money to our delivery boy by cash\nwhen service is done.</string>
+    <string name="pay_after_service">Pay After Service</string>
+    <string name="pay_money_after_service_by_online_payment_nsystem">Pay money after service by online payment\nSystem.</string>
+    <string name="txt_Online">Online</string>
+    <string name="payment_details">Payment details</string>
+    <string name="cart_total">Cart Total</string>
+
+    <string name="convenience_charges">Delivery Charges</string>
+    <string name="apply_coupon">Apply Coupon</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="total">Total</string>
+    <string name="txt_1">1</string>
+    <string name="total_cost">Total Cost</string>
+
+</resources>

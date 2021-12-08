@@ -1,0 +1,3 @@
+include ':JffStaff'
+include ':app'
+rootProject.name = "FinalJffAdmin"

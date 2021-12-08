@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:id="@+id/drawer_layout"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:background="@color/colorBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_blue_botom_cure"
+                    android:clipToPadding="false"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="34dp"
+                    android:paddingBottom="26dp">
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="23dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/profile_image"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_launcher_background"
+                                app:civ_border_color="@color/white"
+                                app:civ_border_width="1dp" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="7dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/sfuidisplay_semibold"
+                                    android:text="hi_acacia"
+                                    android:textColor="@color/white"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/sfuidisplay_regular"
+                                    android:text="how_re_you_today"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rect_white_cure"
+                                android:paddingLeft="11dp"
+                                android:paddingTop="9dp"
+                                android:paddingRight="11dp"
+                                android:paddingBottom="9dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_notification_bell" />
+
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/circle_red"
+                            android:fontFamily="@font/sfuidisplay_medium"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                    </FrameLayout>
+
+
+
+                    <EditText
+                        android:visibility="gone"
+                        android:id="@+id/search"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/rect_white_cure"
+                        android:drawableLeft="@drawable/ic_search"
+                        android:drawablePadding="10dp"
+                        android:hint="search_health_issue_doctor"
+                        android:inputType="text"
+                        android:paddingLeft="19dp"
+                        android:fontFamily="@font/sfuidisplay_regular"
+                        android:paddingTop="14dp"
+                        android:imeOptions="actionDone"
+                        android:paddingBottom="14dp"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/hintcolor"
+                        android:textSize="15sp" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="26dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/take_order"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_barcode" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/sfuidisplay_medium"
+                                android:text="Take Order"
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/pending_orders"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_star" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/sfuidisplay_medium"
+                                android:text="Pending Order"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_wallet" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/sfuidisplay_medium"
+                                android:text="Complete Order"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_ticket" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/sfuidisplay_medium"
+                                android:text="Gift_card"
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="23dp"
+                    android:fontFamily="@font/sfuidisplay_semibold"
+                    android:text="Categories"
+                    android:textColor="@color/lightblack"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/sfuidisplay_regular"
+                    android:text="Find Your Product Quickly"
+                    android:textColor="@color/lightblack"
+                    android:textSize="13sp" />
+
+                <!--Category RecyclerView-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:clipToPadding="false"
+                    android:overScrollMode="never"
+                    android:paddingLeft="29dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="23dp"
+                    android:fontFamily="@font/sfuidisplay_regular"
+                    android:text="What_are_you_looking_for"
+                    android:textColor="@color/lightblack"
+                    android:textSize="13sp" />
+
+                <!--Grid RecyclerView-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="14dp"
+                    android:overScrollMode="never" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <!--BubbleNavigationView-->
+        <com.gauravk.bubblenavigation.BubbleNavigationConstraintView
+            android:id="@+id/top_navigation_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_white_top_cure"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:elevation="15dp"
+            app:bnc_mode="spread">
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/c_item_home"
+                style="@style/toggleview"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                app:bt_active="true"
+                app:bt_colorActive="@color/white"
+                app:bt_colorInactive="@color/inactive"
+                app:bt_icon="@drawable/ic_real_estate"
+                app:bt_shape="@drawable/rect_blue_cornor"
+                app:bt_title="Txt_home"
+                app:bt_titleSize="12sp"/>
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/c_item_activity"
+                style="@style/toggleview"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                app:bt_active="false"
+                app:bt_colorActive="@color/white"
+                app:bt_colorInactive="@color/inactive"
+                app:bt_icon="@drawable/ic_supermarket_4"
+                app:bt_shape="@drawable/rect_blue_cornor"
+                app:bt_title="txt_cart"
+                app:bt_titleSize="12sp" />
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/c_item_rest1"
+                style="@style/toggleview"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                app:bt_active="false"
+                app:bt_colorActive="@color/white"
+                app:bt_colorInactive="@color/inactive"
+                app:bt_icon="@drawable/ic_clock"
+                app:bt_shape="@drawable/rect_blue_cornor"
+                app:bt_title="Txt_history"
+                app:bt_titleSize="12sp" />
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/c_item_grid"
+                style="@style/toggleview"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                app:bt_active="false"
+                app:bt_colorActive="@color/white"
+                app:bt_colorInactive="@color/inactive"
+                app:bt_icon="@drawable/ic_profile"
+                app:bt_shape="@drawable/rect_blue_cornor"
+                app:bt_title="Profile"
+                app:bt_titleSize="12sp" />
+
+        </com.gauravk.bubblenavigation.BubbleNavigationConstraintView>
+    </LinearLayout>
+
+
+</LinearLayout>
